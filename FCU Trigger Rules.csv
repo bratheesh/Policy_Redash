@@ -1,0 +1,20 @@
+rule_id,source,Description
+1004,Eligibility,User email id check in yp black list database
+1004,Profile,User email id check in yp black list database
+2001,Eligibility,User mobile number check in yp black list database
+2001,Pd,"If Bank StatementPAN is not empty, and does NOT match with Input PAN, then reject"
+2009,Profile,Reference phone number in blacklisted database
+2017,Eligibility,User PAN check in yp black list database
+2053,Eligibility,Reject KZ isFraud users- If user's input PAN matches with KZ isFraud users' PAN (added in ypre.ypre.yp_re_blacklist_info table) then reject  (Done as part of Phase 1 implementation of KB-KZ static blacklist rules)
+2054,Eligibility,Reject KZ isFraud users- If user's input Mobile number matches with KZ isFraud users' Mobile number(added in ypre.ypre.yp_re_blacklist_info table) then reject  (Done as part of Phase 1 implementation of KB-KZ static blacklist rules)
+2064,Profile,user's device ID from blacklisted_users_additional_data table 
+2067,KYC,Duplicate cx found during facematch
+2068,KYC,User face in selfie is detected in Blacklisted Faces
+2216,Loan,If device is Rooted
+2303,Loan,First Loan & Facebook email or entered email in blacklist database
+6111,Profile,If the number of connected customers with mobile numbers >2
+6510,Loan,If the number of connected customers with mobile numbers >2
+8052,Profile,OCR data fraud KYC check
+9805,PD,The user name is matched against the PAN and the payslip
+15212,Employment,Bank Narration based rule.
+30100,Eligibility,"If the user is found in KB-KZ common blacklist (Fraud + IMEI, Device Id fraud list), then reject the customer, else pass through"
